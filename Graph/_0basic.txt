@@ -1,0 +1,32 @@
+1.
+2. bfs traversal --> when child enter in queue mark visited[child]  is true
+3. dfs --> first source is marked visited then proceed
+4. detect cycle in directed graph -->dfs if a child is visited and is in active stack then cycle is present
+bfs --> use kahn's algorithm -> calculate indegree --> insert zero indegree vertex in queue and process
+5. detect cycle in undirected graph --> child is visited and not equal to par then cycle is their
+6. Rat in Maze --> backtracking problem
+7. min steps by knight --> use bfs finding min path
+8. Flood Fill --> use bfs to fill color 
+9. clone graph --> just need to make copy
+10. make wired connection --> count disconnected component
+11. word ladder --> simple bfs  but important thing is time complexity find function of vector is O(n) but O(log n) inn set
+12  dijkstra algorithm -->  greedy, work for cyclic, acyclic, directed, undirected but not for negative weight edge 
+13. topological sort --> dfs-->use stack bfs--> concept of indegree
+14. Minimum time taken by each job to be completed given by a Directed Acyclic Graph --> topological sort
+15. Prerequisite Tasks -- simple detect cycle in directed graph
+16. find no. of island  --> simple finding connected component --> use bfs or dfs
+17. alien dictionary -->  use topological sort
+18. prims
+19. kruskal
+20. no of spanning tree --> n^(n-2) in complete graph
+21. bellman ford --> important two case  1.  when no.of edges is zero  2. mark zero dist to first edge element otherwise if mark dist[0]=0  and no any element is reachable from 0 then it will not detect cycle
+22. floyd warshal --> update using vai
+23. Travelling salesman 
+24. graph coloring --> use backtracking
+25. snake and ladder --> solve using bfs
+26. finding bridge --> if edges removed then no. of components increases --> if(low[child]>disc[s])
+27. Kosaraju algo --> find strongly connected component --> sort according to finishing time or topological sort --> reverse the edges --> dfs using topological sort
+28. bipartile --> using bfs and dfs Not like graph coloring --> may be disconnected component
+29. longest path in DAG --> same as shortest path --> topological sort -> then relax every edges
+30. moon problem --> find connected component --> then calculate result(some special)
+31. cheapest flight with atmost k stops --> queue store stops node and price Not price of node

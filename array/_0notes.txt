@@ -1,0 +1,41 @@
+01,06,07,13,14
+02,03,04,05,08
+09,10,11,12,15
+priority --> 3,9,10,17,23,24,26,31,33
+
+01. reverse the array---> use in place recursive method --> exchange first and last element --> O(n)
+02. Find min max in array---> using tournament method --> binary search --> O(n)  && O(logn)
+03. Find kth min--> use concept of heap and lomuto partition in O(n)av time but worst case time complexity is O(n^2)
+04. sort array consist of 0 1 and 2 only ---> using string and colored balls seperation method --> 3 slider --> O(n)(imp --> ptr will increase only when swapping is between start and ptr)
+05. move negative number one side and positive other side--->same as above --> O(n)
+06. union and intrersection --> sort both then apply simple logic -- O(m+n)
+07. left rotation
+08. largest sum contiguous subarray ---> Kadane's Algorithm --> maxEnd(i)=max(maxEnd(i-1)+arr[i] , arr[i]) --> O(n)
+09. Minimize the Heights-->before ith element increase the height from ith to last decrease and find new difference bw max and min.
+10. reach to end --> just go with code
+11. Find the Duplicate Number --> use tortoise approach --> O(n)
+12. merge --> use linked list
+13. Kadane's Algorithm --> O(n)
+14. Merge Intervals --> sort and merge --> O(nlogn)
+15. Next Permutation --> find decline from back let it idx  then find just greater element from arr[idx-1]  swap then reverse from idx to end 
+16. Count Inversions --> use merge sort and count swaps take ***care in merging when both are equal --> O(nlogn)  & O(n)
+17. Best Time to Buy and Sell Stock --> process from last --> O(n)
+18. Count pairs with given sum --> use hasmmap --> O(n) & O(n)
+19. Common elements in three sorted array --> same as finding min and max in three element --> O(n+m+p)
+20. Alternate positive and negative numbers --> 
+21. Subarray with 0 sum --> calculate cummulative sum if two value repeated then subarray of sum 0 exist--> O(n)  & O(n)
+22. Factorials of large numbers --> store every digit somewhere and perform simple multiplication --> O(n^2)
+23. Maximum Product Subarray --> just like kadanes find maximum from both side --> O(n)
+24. Longest consecutive subsequence --> use hash map --> O(n)  & O(n)
+25. Count More than n/k Occurences --> Use hash map --> O(n)  & O(n)
+26. Buy and Sell a Share at most twice --> use two times kadanes
+27. Array Subset of another array --> Use hash map --> O(n)  & O(n)
+28. Triplet Sum in Array --> O(n^2)&&O(n)  just like finding pair
+29. Trapping Rain Water --> O(n) --> store left max height and right max height first
+30. Chocolate Distribution Problem --> first sort then find minimum difference between largest and Smallest like window slide
+31. Smallest subarray with sum greater than x --> same like window sliding --> O(n)
+32. Three way partitioning --> use three pointer approach --> O(n)
+33. Minimum swaps and K together --> Use window sliding technique --> O(n)
+34. min merge to form palindrome --> simply merge two adjacent number --> O(n)
+35. Median of 2 Sorted Arrays of Different Sizes --> --> use binary search --O(logn1)
+36. Median of 2 Sorted Arrays of Different Sizes --> use binary search --O(logn1)

@@ -1,0 +1,29 @@
+1. Reverse linked list --> just like swapping
+2.
+3. find loop --> use tortoise approach using do while   or use map
+4. remove loop 
+5. 
+6. remove dublicates sorted --> just traverse and remove
+7. 
+8. move last to first -->explicitly handle single node case
+9. Add 1 to a number represented as linked list --> first reverse the list and think if node data is 9
+10. Add two numbers represented by linked lists --> reverse both and perform addition be carefull for last node if carry is not 0 at the end then we need to add onr extra node
+11. Intersection of two sorted Linked lists --> like merge operation
+12. Intersection Point in Y Shaped Linked Lists --> don't use reverse --> find difference of length and solve it
+13. merge function --> merge one list completely two other
+13. merge Sort --> same as in arrays --> after deviding into two half change mid->next to NULL
+14. 
+15.
+16.
+17. Split a Circular Linked List into two halves circular list --> find head then find mid first list is from head to mid and second from mid->next to before head --> also convert these two list circular
+18. palindraome --> find mid --> reverse after mid -->compare --> again reverse
+19. Deletion and Reverse in circular Linked List --> easy take care during reverse
+20. Reverse a Doubly Linked List --> maintain cur->prev = tmp  other same as single LL
+21. Find pairs with given sum in doubly linked list(sorted and distinct) --> two pointer approach
+22. Count triplets in a sorted doubly linked list whose sum is equal to a given value x --> O(n^2) use above
+23. Sort a k sorted doubly linked list-->We can sort the list using the MIN HEAP data structure
+
+
+
+29. Given a linked list of 0s, 1s and 2s, sort it --> make three linked list zero ,one and two after it join them
+30.

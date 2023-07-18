@@ -1,0 +1,28 @@
+3,7,8,11,15,18,21,22,23
+
+
+01. find first occurrence --> if arr[mid]==key  chk arr[mid-1]==k if true search in left 
+    find last occurrence  --> if arr[mid]==key  chk arr[mid+1]==k if true search in right 
+02. Value equal to index value --> easy
+03. Search in Rotated Sorted Array -->half part will be always sorted in rotated sorted array , to decide which half is sorted compare first element with mid element
+04. squre root --> simple binary search
+07. missing and repeating --> use index
+08  majority element --> find possible candidate then chk it is majority element or not
+09. Searching in an array where adjacent differ by at most k --> make a jump of abs(arr[i]-x)/k
+10. Find Pair Given Difference --> sort then binary search
+11. Find All Four Sum Numbers --> sort then apply two pointer approach
+12. max sum so no two element arr adjacent --> problem of dp
+13. Count triplets with sum smaller than X --> sort and two pointer approach
+14. mergeSort --> devide and conquere
+15. Zero Sum Subarray --> make prefix sum array --> if a value repeated in prefix sum then there exist a zero sum sub array between then special case prefix sum itself zero include it
+16. Product array puzzle --> store left[i] = arr[i-1]*left[i-1]   and right[i] = arr[i+1]*right[i+1]
+17. simple use sort function
+18. Minimum Swaps to Sort --> store index then sort and compare
+19. Bishu and Soldier --> always pass vector using reference
+20.
+21. find kth smallest element --> priority queue or lomuto partition technique
+22. partition --> naive O(3n) ,
+    lomuto O(n) and in place unstable last element pivot --> reach pivot its correct position at the end,
+    hoares O(n) and in place unstable first element pivot --> pivot will not on its right place at end
+23. find kth element smallest from two sorted array --> same approach as find median in two sorted array careful choosing binary search area
+

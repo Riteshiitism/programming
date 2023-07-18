@@ -1,0 +1,40 @@
+04,11,15 
+
+01. level order --> use queue
+02. reverse level order --> use stack --> to store res ,and queue --> to store node  imp --> right child whill go first in queue
+03. height of tree --> find left and right then return max(l,r)+1
+04. Diameter or no. of nodes in longest path --> diameter = max((left.hight + right.height + 1),max(dia(left),dia(right)))
+05. mirror tree --> use level order and swap left and right child of each nodes then call for other child --> use preorder, postorder,levelorder any
+06. inorder iterative --> use stack push all the root if root is not null otherwise process st.top and move to right child of st.top
+07. preorder iterative --> process node(if not null) and store their right child(if not empty) in stack and move to left child,   if node is null pop top from stack
+08. postorder iterative --> like level order traversal use stack instead of queue -> store left child then right store node data in another stack
+09. left view --> use level order / use level and ans.size(){it will work ans maxLevel} to store data concept
+10. right view --> same as above except first process right child
+11. top view --> use level order --> assign a no. to each node and use map
+12. bottom view --> use level order --> assign a no. to each node and use map
+13. zig zag --> use stack and queue and odd even concept
+14. balanced tree --> use height concept
+15. diagonal traversal --> like level order traversal use queue to store node,, for n length queue process all right child and store their left child for each entry of queue
+16. Boundary traversal -> root + left child + leftleaf + rightleaf + right child --> left view and left child are different --> for left child first store then process while for right child first process then store
+    vertical traversal --> simple use horizontal distance concept
+17. Construct Binary Tree from String with bracket representation --> find left child substring and right child substring then recursive call
+18. BT to DLL -> use recursion inorder
+    morris traversal --> O(n) && O(1)
+19. binary tree to sum tree --> use post order store node value in tmp then change node value to sum of left node val + right node val then return tmp+node value
+20. construct tree --> divide array then recursive call
+21. minSwaps  --> construct an array using inorder traversal then count min swaps required to convert it in sorted array(it can be done by first construct vector of pair which store value and index after it sort the vector then traverse vector and decide swap is required or not using if(idx==v[idx]))
+22. isSumTree   --> post order traversal first check root->data = l->data+r->data   return true if satisfied before returning update root->data = root->data+l->data+r->data
+23. Leaf at same level --> reach at first leaf node set a fixed level then reach next leaf nodes and check they are same as previous fixed level 
+24. dublicate subtree size greater than 1 --> use string method and map
+25. mirror N-ary tree --> compare each node and their child 
+26. sum of longest path from root to leaf --> use post order 
+27. Check if a given graph is tree or not --> NO cycle & connected 
+28. Largest subtree sum in a tree --> each node return a pair{total sum,max sum}    {left.first+right.first+root->data,max(left.second,right.second,total sum)}
+29. Maximum sum of Non-adjacent nodes --> dp problem
+30. 
+31. LCA  --> 1. find path from root to nodes then find last common node 2. if any node found return node ,,post oreder  if left is NOTnull return left same for right child
+32. distance between two given nodes --> first find lca then distance between nodes and lca
+33. kth ancestor -->1. find path   2. post order traversal if node found reduce k and return node(base case)  if k==0 store ans  ,, if left is Notnull reduce k and return left same for right child
+34. print dublicate subtree --> use string method if a string is repeated store node in ans
+35. isomprphic --> compare root1->data to root2->data then call for left and right child
+36. burnAtree --> graph bfs problem
